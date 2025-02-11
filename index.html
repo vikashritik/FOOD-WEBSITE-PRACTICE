@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+    *{
+        margin: 0;
+    }
+    
+    body{
+        background-color: rgb(253, 243, 243);
+    }
+    
+    .card:hover{
+        background-color: white;
+        border-color:white ;
+    }
+    
+    .off{
+        font-size: 30px;
+        color: white;
+        background-color:rgba(218, 43, 16, 0.4);
+        position: absolute;
+        bottom: 20px;
+        left: 10px;
+    }
+    
+    .first{
+       margin-left:500px;
+       margin-bottom: 20px;
+    }
+    
+    .img3{
+        height: 70px;
+        width: 70px;
+    }
+    
+    .third{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: grey;
+    }
+    
+    .dining{
+        margin-left: 200px;
+    }
+    
+    .second{
+      padding-bottom: 10px;
+      margin-left: 350px;
+      position: sticky;
+      top: 0px;
+      background-color: white;
+       
+    }
+    
+    .dine, .Delivery, .Nightlife{
+        position: relative;
+        bottom: 22px;
+        left: 5px;
+        font-size: 20px;
+        color: rgb(98, 94, 94);
+    }
+    
+    .delivery{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    
+    .brand{
+        color: rgb(216, 5, 5);
+        margin-right: 50px;
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+    
+    .searching{
+        height: 30px;
+        width: 300px;
+        margin-right: 50px;
+        position: relative;
+        bottom: 12px;
+    }
+    
+    button{
+        height: 50px;
+        width: 80px;
+        position: relative;
+        bottom: 10px;
+        font-size: 15px;
+        margin-right: 50px;
+        background-color: white;
+        border: none;
+        color: rgb(101, 97, 97);
+    
+    
+    }
+    
+    .head{
+        background-color: white;
+    }
+    
+    .log{
+    
+    }
+    
+    .card{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 10px;
+        cursor: pointer;
+        border: 10px solid rgb(253, 243, 243);
+        border-radius: 20px;
+        
+    }
+    
+    .image{
+        position: relative;
+    }
+    .Box{
+        display: inline-block;
+    }
+    
+    .img{
+        height: 290px;
+        width: auto;
+        border-radius: 20px;
+    }
+    
+    .Restaurant_Name{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .Restaurant , .food , .location{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .rating{
+        background-color: green;
+        height: 20px;
+        padding: 3px;
+        position: absolute;
+        right: 5px;
+        color: white;
+        border-radius: 8px;
+    }
+    
+    
+    .price{
+        position: absolute;
+        right: 5px;
+    }
+    
+    .Distance{
+        position: absolute;
+        right: 5px;
+    }
+    
+    .food , .Place{
+        font-size: 15px;
+        color:rgb(88, 88, 88);
+    }
+    
+    .Distance{
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .Place{
+        height: 20px;
+        width: 150px;
+    
+    }
+</style>
+</head>
+<body>
+
+    <header>
+        <div class="head">
+       <div class="first">
+        <div class="brand Box">
+            <h1>FOOD APP</h1>
+        </div>
+        <div class="search Box">
+            <form>
+                <input type="text" class="searching" placeholder="Search for restaurant, cusine or a dish">
+            </form>
+        </div>
+        <div class="log Box">
+            <button>Log in</button>
+        </div>
+        <div class="sign Box">
+            <button>Sign Up</button>
+        </div>
+       </div>
+       <div class="second">
+        <div class="dining Box">
+            <div class="images Box">
+                <img src="./Dining.avif" alt="dining logo" class="img3">
+            </div>
+            <div class="dine Box">
+                <h2>Dining Out</h2>
+            </div>
+        </div>
+        <div class="delivery Box">
+            <div class="images Box">
+                <img src="./Delivery.webp" alt="delivery logo" class="img3">
+            </div>
+            <div class="Delivery Box">
+                <h2>Delivery</h2>
+            </div>
+          
+        </div>
+        <div class="nightlife Box">
+            <div class="images Box">
+                <img src="./Nightlife.webp" alt="nightlife logo" class="img3">
+            </div>
+            <div class="Nightlife Box">
+                <h2>Nightlife</h2>
+            </div>
+            
+        </div>
+       </div>
+
+       <div class="third">
+        <h2>Collections</h2>
+       </div>
+
+        </div>
+    </header>
+    
+
+    <main>
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 90% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+      
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+      
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+      
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+      
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+      
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+
+    <div class="card">
+        <!-- Image -->
+
+         <div class="image">
+            <img src="./Rest.avif" alt="" class="img">
+            <p class="off">Flat 25% OFF</p>
+         </div>
+
+         <!-- Restaurant Name-->
+
+          <div class="Restaurant">
+            <div class="Restaurant_Name Box">
+                <p>The Darzi Bar and Kitchen</p>
+            </div>
+            
+            <div class="rating Box">
+                <p>4.2*</p>
+            </div>
+
+          </div>
+
+          <!-- Food Information -->
+
+          <div class="food">
+            <div class="food_name Box">
+                <p>North Indian ,Chinese</p>
+            </div>
+
+            <div class="price Box">
+                <p>&#8377;2800 for two</p>
+            </div>
+          </div>
+
+           <!-- Location -->
+
+           <div class="location">
+           <div class="Place Box">
+            <p>Middle Circle ,CP</p>
+           </div>
+
+           <div class="Distance Box">
+            <p>1.4Km</p>
+           </div>
+           </div>
+
+    </div>
+</main>
+
+</body>
+</html>
